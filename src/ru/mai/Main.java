@@ -27,6 +27,8 @@ public class Main {
         String s4 = "abc";
         String s5 = s3;
         String s6 = new String("   ab  c                 ");
+        char[] chars = {'a', 'b'};
+        String s7 = new String(chars);
 
         // Сравнение срок: правильное сравнение по значению - это использование метода equals
         if (s1 == s3) {
@@ -69,7 +71,7 @@ public class Main {
         System.out.println(s6);
 
         // Преобразование строки к набору символов
-        char[] chars = s1.toCharArray();
+        char[] chars1 = s1.toCharArray();
         s1.chars().forEach(System.out::println);
 
         // Сравнение строк - по умолчанию лексисографически
@@ -77,7 +79,7 @@ public class Main {
         System.out.println(s2.compareTo(s1));
         System.out.println(s1.compareToIgnoreCase(s4));
 
-        // split - разбиение строки на набор строк по переданному разделитею (в т.ч. регулярному выражению)
+        // split - разбиение строки на набор строк по переданному разделителю (в т.ч. регулярному выражению)
         String[] strs = s1.split(" ");
         for(String str : strs) {
             System.out.println(str);
