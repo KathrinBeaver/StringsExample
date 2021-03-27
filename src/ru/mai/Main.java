@@ -110,7 +110,8 @@ public class Main {
         sb.deleteCharAt(1);
         System.out.println(sb);
 
-        sb.deleteCharAt(-1);
+        sb.deleteCharAt(1);
+//        sb.deleteCharAt(-1);
         sb.insert(1, "dddd123");
         System.out.println(sb);
 
